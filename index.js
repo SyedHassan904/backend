@@ -11,9 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
 app.use("/auth",AuthRoutes)
-app.get("/hello", (req,res)=>{
+app.get("/home", (req,res)=>{
     res.send("Hello")})
-app.use("/auth",AuthRoutes)
 app.listen(port,()=>{
     console.log(`Server is running at ${port}`)
 })
